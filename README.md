@@ -10,6 +10,8 @@ It supports:
 
 > Note: This extension is tailored to a UCam-style payload shaped like `data.courses[].sections[]`.
 
+> Note: This extension may **not work** when you are using a Chrome profile that is signed into a **university email** account (managed/enterprise profile policies can block script injection or downloads). If you run into this, try using a **personal Chrome profile** or **Guest** mode.
+
 ---
 
 ## How it works (high level)
@@ -72,6 +74,11 @@ The generated table includes:
 ---
 
 ## Troubleshooting
+
+### Doesn’t work on a university (managed) Chrome profile
+Some university/enterprise-managed Chrome profiles can block extension behavior (e.g., script injection or downloads). If you are logged into Chrome with your **university email** account and nothing is captured / no PDF downloads, try:
+- Switching to a **personal Chrome profile**
+- Or using **Guest** mode
 
 ### No departments / no courses shown
 - Make sure you visited the portal page that triggers the sections request.
