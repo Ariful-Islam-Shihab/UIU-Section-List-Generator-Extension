@@ -33,6 +33,12 @@ It supports:
 
 ## Usage
 
+## How-to Video
+
+Watch the step-by-step demo here:
+
+- https://youtu.be/c6W3iakG17c
+
 1. Open the UCam portal in Chrome.
 2. Navigate to the page/action that loads the **sections list** (the request URL usually contains `sections`).
 3. Click the extension icon to open the popup.
