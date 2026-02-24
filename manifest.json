@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "UCam Sections PDF Generator",
+  "version": "1.0",
+  "description": "Intercepts UCam portal sections data and generates PDF",
+  "permissions": [
+    "downloads",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "UCam Sections PDF Generator",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["injected.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
